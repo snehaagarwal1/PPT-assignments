@@ -1,60 +1,39 @@
 /*
-**Question 1**
+**Question 3**
 
-Convert 1D Array Into 2D Array
-
-You are given a **0-indexed** 1-dimensional (1D) integer array original, and two integers, m and n. You are tasked with creating a 2-dimensional (2D) array with  m rows and n columns using **all** the elements from original.
-
-The elements from indices 0 to n - 1 (**inclusive**) of original should form the first row of the constructed 2D array, the elements from indices n to 2 * n - 1 (**inclusive**) should form the second row of the constructed 2D array, and so on.
-
-Return *an* m x n *2D array constructed according to the above procedure, or an empty 2D array if it is impossible*.
+Given an integer array nums sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order*.
 
 **Example 1:**
 
-**Input:** original = [1,2,3,4], m = 2, n = 2
+**Input:** nums = [-4,-1,0,3,10]
 
-**Output:** [[1,2],[3,4]]
+**Output:** [0,1,9,16,100]
 
-**Explanation:** The constructed 2D array should contain 2 rows and 2 columns.
+**Explanation:** After squaring, the array becomes [16,1,0,9,100].
 
-The first group of n=2 elements in original, [1,2], becomes the first row in the constructed 2D array.
-
-The second group of n=2 elements in original, [3,4], becomes the second row in the constructed 2D array.
-
-</aside>
-**Output:** [[1,2],[3,4]]
-
-**Explanation:** The constructed 2D array should contain 2 rows and 2 columns.
-
-The first group of n=2 elements in original, [1,2], becomes the first row in the constructed 2D array.
-
-The second group of n=2 elements in original, [3,4], becomes the second row in the constructed 2D array.
+After sorting, it becomes [0,1,9,16,100].
 
  */
 
 import java.util.Arrays;
 
-public class Q1 {
+public class Q3 {
     public static void main(String[] args) {
         Solution sol = new Solution();
-        int[] nums = {1,2,3,4};
-        int res[][] = sol.construct2DArray(nums,2,2);
-        System.out.println(Arrays.deepToString(res));
+        int[] nums = {-4,-1,0,3,10};
+        int res[] = sol.sortedSquares(nums);
+        System.out.println(Arrays.toString(res));
     }
 }
 
 
 
 class Solution {
-    public int[][] construct2DArray(int[] original, int m, int n) {
-        if(original.length!= m*n) return new int [][]{};
-        int [][]res = new int[m][n];
-        int pos= 0;
-        for(int i= 0 ; i< m ; i++){
-            for(int j= 0 ; j< n ; j++){
-                res[i][j] = original[pos++];
-            }
+    public int[] sortedSquares(int[] nums) {
+        for(int i=0; i<nums.length; i++){
+            nums[i] = nums[i] * nums[i];
         }
-        return res;
+        Arrays.sort(nums);
+        return nums;
     }
 }
