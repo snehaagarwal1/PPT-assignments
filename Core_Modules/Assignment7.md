@@ -54,7 +54,7 @@ The forward () method of the RequestDispatcher works on the server-side, while t
 #### Q7.What is the purpose of the doGet() and doPost() methods in a servlet?
 - Purpose of doGet() method:The doGet() method is used to handle HTTP GET requests. When a client sends a GET request to a servlet, the servlet container calls the doGet() method of that servlet. This method is responsible for processing the request and generating an appropriate response. The doGet() method is commonly used for retrieving data from the server without modifying it.
 
--Purpose of doPost() method:The doPost() method is used to handle HTTP POST requests. When a client sends a POST request to a servlet, the servlet container calls the doPost() method of that servlet. This method is responsible for processing the request and generating an appropriate response. The doPost() method is commonly used for submitting data to the server for processing or modification.
+- Purpose of doPost() method:The doPost() method is used to handle HTTP POST requests. When a client sends a POST request to a servlet, the servlet container calls the doPost() method of that servlet. This method is responsible for processing the request and generating an appropriate response. The doPost() method is commonly used for submitting data to the server for processing or modification.
 
 #### Q8.Explain the JSP Model-View-Controller (MVC) architecture.
 The JSP Model-View-Controller (MVC) architecture is a design pattern commonly used in web application development. It provides a structured approach to separating the concerns of an application into three distinct components: the model, the view, and the controller. This architectural pattern promotes modularity, reusability, and maintainability of code.
@@ -80,13 +80,13 @@ Servlets offer several advantages in web development:
 - *Security*: Servlets provide a secure environment for web application development. They support various security mechanisms such as SSL/TLS encryption, authentication, and authorization. Servlet containers also offer features like request filtering, input validation, and protection against common web vulnerabilities like cross-site scripting (XSS) and SQL injection.
 
 #### Q10.What are the limitations of JSP?
--*Complexity* : JSP can become complex and difficult to maintain as the application grows in size and complexity. 
+- *Complexity* : JSP can become complex and difficult to maintain as the application grows in size and complexity. 
 
--*Performance* : JSP pages are compiled into servlets before they can be executed by the web server. 
+- *Performance* : JSP pages are compiled into servlets before they can be executed by the web server. 
 
 - *Limited Separation of Concerns* : JSP promotes a mixed approach where Java code and HTML markup are intermingled within the same file.
 
--*Limited Reusability*: JSP pages are typically tightly coupled with specific servlets or controllers, making it challenging to reuse them across different parts of an application or in different projects. 
+- *Limited Reusability*: JSP pages are typically tightly coupled with specific servlets or controllers, making it challenging to reuse them across different parts of an application or in different projects. 
 
 - *Lack of Flexibility*: JSP is primarily focused on generating HTML output, which limits its flexibility when dealing with other types of content or response formats. 
 
