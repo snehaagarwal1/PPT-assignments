@@ -1,4 +1,4 @@
-# Assignment 1
+# Assignment 6
 
 Pw Skills Java Core Module assignment's answers.
 
