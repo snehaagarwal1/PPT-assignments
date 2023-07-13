@@ -86,7 +86,7 @@ Servlets offer several advantages in web development:
 
 - *Limited Separation of Concerns* : JSP promotes a mixed approach where Java code and HTML markup are intermingled within the same file.
 
-- *Limited Reusability*: JSP pages are typically tightly coupled with specific servlets or controllers, making it challenging to reuse them across different parts of an application or in different projects. 
+- *Limited Reusability* : JSP pages are typically tightly coupled with specific servlets or controllers, making it challenging to reuse them across different parts of an application or in different projects. 
 
 - *Lack of Flexibility*: JSP is primarily focused on generating HTML output, which limits its flexibility when dealing with other types of content or response formats. 
 
